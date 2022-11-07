@@ -1,6 +1,7 @@
 import {useState , useCallback } from "react"
 import Memo from "./memo"
 import UseMemo from "./useMemo"
+import UseReducer from "./useReducer"
 // 
 function UseCallback(){
 
@@ -11,10 +12,11 @@ function UseCallback(){
 
 
     return(
-        <div style={{padding:'10px,10px'}}>
+        <div style={{padding:'10px 10px'}}>
             <Memo onIncrease={handleIncrease}/>
             <h1>{count}</h1>
             <UseMemo/>
+            <UseReducer/>
         </div>
     )
 }
