@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import UseCallback from './useCallback';
+import { ThemeProvider } from './context/themContext';
 import reportWebVitals from './reportWebVitals';
+import UseContext from './context/userContext';
 
 function emitComment(id){
     setInterval(()=>{
@@ -22,7 +24,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
     // <App />
-    <UseCallback/>
+    // <UseCallback/>
+    <ThemeProvider>
+      <UseContext/>
+    </ThemeProvider>
+    
+   
   // </React.StrictMode>
 );
 
