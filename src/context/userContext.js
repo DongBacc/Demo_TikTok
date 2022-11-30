@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import {ThemeContext,ThemeProvider} from './themContext.js'
 
 import Context from './Context'
-import './userContext.css'
+import styles from'./userContext.module.css'
 
 
 function UseContext(){

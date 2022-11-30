@@ -6,6 +6,11 @@ import UseCallback from './useCallback';
 import { ThemeProvider } from './context/themContext';
 import reportWebVitals from './reportWebVitals';
 import UseContext from './context/userContext';
+import AppStore from './store/Appstore';
+import Provider from './store/Provide';
+import AppV2 from './contextv2/AppV2'
+import {Paragraph} from './contextv2/Paragraph/paragraph'
+
 
 function emitComment(id){
     setInterval(()=>{
@@ -25,10 +30,15 @@ root.render(
   // <React.StrictMode>
     // <App />
     // <UseCallback/>
-    <ThemeProvider>
-      <UseContext/>
-    </ThemeProvider>
-    
+    // <ThemeProvider>
+    //   <UseContext/>
+    // </ThemeProvider>
+    // <Provider>
+    //   <AppStore/>
+    // </Provider>
+    <Paragraph>
+      <AppV2/>
+    </Paragraph>
    
   // </React.StrictMode>
 );
